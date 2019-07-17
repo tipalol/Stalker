@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <LangVersion>8.0</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <LangVersion>8.0</LangVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Remove="Class1.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Core\" />
+    <Folder Include="Core\Entites\" />
+    <Folder Include="Core\Entites\Creatures\" />
+    <Folder Include="Core\Entites\Items\" />
+    <Folder Include="Core\Entites\Locations\" />
+    <Folder Include="Core\Quests\" />
+    <Folder Include="Core\Events\" />
+    <Folder Include="Core\Entites\Creatures\NPC\" />
+    <Folder Include="Core\Entites\Creatures\Mutants\" />
+    <Folder Include="Core\Entites\Anomalies\" />
+    <Folder Include="Core\Entites\Buildings\" />
+  </ItemGroup>
+</Project>
